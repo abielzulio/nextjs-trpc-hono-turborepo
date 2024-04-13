@@ -1,7 +1,13 @@
 {
+  "name": "api",
+  "version": "1.0.0",
+  "private": true,
   "scripts": {
     "dev": "wrangler dev src/index.ts",
     "deploy": "wrangler deploy --minify src/index.ts"
+  },
+  "exports": {
+    ".": "./src/index.ts"
   },
   "dependencies": {
     "hono": "^4.2.3"
